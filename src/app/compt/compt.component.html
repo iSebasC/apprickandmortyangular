@@ -1,0 +1,19 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Personajes</h1>
+  <mat-grid-list cols="2" rowHeight="250px" *ngFor="let item of personajes">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{item.name}}</mat-card-title>
+          <mat-card-subtitle>{{item.status}}</mat-card-subtitle>
+          <img mat-card-lg-image [src]="item.image" >
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        Gender: {{item.gender}}
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-list>
+</div>
+
+
