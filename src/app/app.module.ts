@@ -21,6 +21,8 @@ import { Compt2Component } from './compt2/compt2.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { FormsModule } from '@angular/forms';
     MatMenuModule,
     HttpClientModule,
     Ng2SearchPipeModule,
-    FormsModule
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
